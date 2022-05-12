@@ -1,0 +1,2 @@
+log2c_parameters = [i - 8 for i in range(0, 18, 2)]
+log2g_parameters = [i - 8 for i in range(0, 18, 2)]
