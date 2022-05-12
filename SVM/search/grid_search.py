@@ -20,7 +20,7 @@ def grid_search(log2c_parameters, log2g_parameters, kernel, training_data, X_tes
     for now_focus_log2c in range(len(log2c_parameters)):
         for now_focus_log2g in range(len(log2g_parameters)):
             print(f"grid searching.... {log2c_parameters[now_focus_log2c], log2g_parameters[now_focus_log2g]}")
-            parameter = f"-q -t {kernel_index} -v 2 -c {2 ** log2c_parameters[now_focus_log2c]}"
+            parameter = f"-q -t {kernel_index} -v 3 -c {2 ** log2c_parameters[now_focus_log2c]}"
             if kernel_index != 0:
                 parameter += f" -g {2 ** log2g_parameters[now_focus_log2g]}"
             print(parameter)
